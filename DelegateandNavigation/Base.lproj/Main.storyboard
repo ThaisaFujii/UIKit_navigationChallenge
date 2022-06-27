@@ -17,7 +17,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OT6-DE-80k">
-                                <rect key="frame" x="70" y="405" width="274" height="108"/>
+                                <rect key="frame" x="70" y="405" width="274" height="31"/>
                                 <color key="backgroundColor" red="0.91764705879999997" green="0.1137254902" blue="0.14901960780000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="200" id="AcV-Ot-pGd"/>
@@ -27,7 +27,7 @@
                                     <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </buttonConfiguration>
                                 <connections>
-                                    <segue destination="sAK-4q-rq1" kind="presentation" id="feg-Q2-d0K"/>
+                                    <segue destination="A4e-G7-nju" kind="presentation" id="S8X-LH-9Oc"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -58,13 +58,17 @@
                     </view>
                     <toolbarItems/>
                     <navigationItem key="navigationItem" title="ViewController B" id="dzj-vZ-wGS">
-                        <barButtonItem key="rightBarButtonItem" title="Item" width="232.66666666666669" id="45V-fR-h9B"/>
+                        <barButtonItem key="rightBarButtonItem" title="Dismiss" id="fP9-Su-xl3">
+                            <connections>
+                                <action selector="DismissSheet:" destination="NvF-NW-WYE" id="LgI-rt-aXc"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HcI-t8-jyJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3289.8550724637685" y="53.571428571428569"/>
+            <point key="canvasLocation" x="2705.7971014492755" y="53.571428571428569"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="xwz-1e-3d8">
@@ -85,22 +89,22 @@
             <point key="canvasLocation" x="-13.043478260869566" y="53.571428571428569"/>
         </scene>
         <!--Navigation Controller-->
-        <scene sceneID="tlL-W8-GY4">
+        <scene sceneID="sHT-WK-7gP">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="sAK-4q-rq1" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="A4e-G7-nju" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="eif-v6-osk">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="sl0-DG-p2V">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="56"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="NvF-NW-WYE" kind="relationship" relationship="rootViewController" id="atN-Jk-bfO"/>
+                        <segue destination="NvF-NW-WYE" kind="relationship" relationship="rootViewController" id="HGT-OT-yJV"/>
                     </connections>
                 </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="OiJ-iW-DdT" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ebt-j4-pPN" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2379.7101449275365" y="53.571428571428569"/>
+            <point key="canvasLocation" x="1795.6521739130437" y="53.571428571428569"/>
         </scene>
     </scenes>
     <resources>

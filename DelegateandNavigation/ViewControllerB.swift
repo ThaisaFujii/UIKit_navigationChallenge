@@ -11,11 +11,25 @@ class ViewControllerB: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        
+        // creation of the button with UIBarButtonItem
+//        self.navigationItem.rightBarButtonItem = UIBarButtonItem(
+//            title: "Dismiss", // define the title of the button
+//            style: .plain, // define the style of the title
+//            target: self, // define the target is the ViewControllerB
+//            action: #selector(didTapButton) // define the action of the button (back to the other view)
+//        )
     }
     
-
+    @IBAction func DismissSheet(_ sender: Any) {
+        self.dismiss(animated: true)
+    }
+    //    @objc func didTapButton() {
+//        // action of the button to dismiss the sheet
+//        self.dismiss(animated: true)
+//    }
+//
+  
     /*
     // MARK: - Navigation
 
